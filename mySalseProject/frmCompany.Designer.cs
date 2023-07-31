@@ -41,11 +41,11 @@
             this.txtCompanyName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtCompanyAddress = new System.Windows.Forms.TextBox();
-            this.txtCompanyDate = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.phones1 = new mySalseProject.phones();
+            this.dtCompanyDate = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pcb)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +59,7 @@
             this.btnAdd.TabIndex = 64;
             this.btnAdd.Text = "اضافة";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // btnNew
             // 
@@ -178,14 +179,6 @@
             this.txtCompanyAddress.Size = new System.Drawing.Size(536, 27);
             this.txtCompanyAddress.TabIndex = 59;
             // 
-            // txtCompanyDate
-            // 
-            this.txtCompanyDate.Location = new System.Drawing.Point(218, 234);
-            this.txtCompanyDate.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txtCompanyDate.Name = "txtCompanyDate";
-            this.txtCompanyDate.Size = new System.Drawing.Size(536, 27);
-            this.txtCompanyDate.TabIndex = 58;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -228,11 +221,19 @@
             this.phones1.Size = new System.Drawing.Size(502, 402);
             this.phones1.TabIndex = 67;
             // 
+            // dtCompanyDate
+            // 
+            this.dtCompanyDate.Location = new System.Drawing.Point(218, 238);
+            this.dtCompanyDate.Name = "dtCompanyDate";
+            this.dtCompanyDate.Size = new System.Drawing.Size(536, 27);
+            this.dtCompanyDate.TabIndex = 68;
+            // 
             // frmCompany
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1294, 674);
+            this.Controls.Add(this.dtCompanyDate);
             this.Controls.Add(this.phones1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnNew);
@@ -246,7 +247,6 @@
             this.Controls.Add(this.lblEmpNo);
             this.Controls.Add(this.txtCompanyDetails);
             this.Controls.Add(this.txtCompanyName);
-            this.Controls.Add(this.txtCompanyDate);
             this.Controls.Add(this.txtCompanyAddress);
             this.Controls.Add(this.txtCompanyCode);
             this.Controls.Add(this.txtCompanyNo);
@@ -258,6 +258,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCompany";
+            this.Load += new System.EventHandler(this.FrmCompany_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -279,10 +280,10 @@
         private System.Windows.Forms.TextBox txtCompanyName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCompanyAddress;
-        private System.Windows.Forms.TextBox txtCompanyDate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private phones phones1;
+        private System.Windows.Forms.DateTimePicker dtCompanyDate;
     }
 }
