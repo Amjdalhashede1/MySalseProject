@@ -68,6 +68,18 @@
       <DependentUpon>aaa.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="employee.Designer.cs">
+      <DependentUpon>employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompany.Designer.cs">
+      <DependentUpon>frmCompany.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEmployees.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,18 @@
     <Compile Include="frmChangeBackColor.Designer.cs">
       <DependentUpon>frmChangeBackColor.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnit.Designer.cs">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_category.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,15 +142,16 @@
     <Compile Include="phones.Designer.cs">
       <DependentUpon>phones.cs</DependentUpon>
     </Compile>
-    <Compile Include="thePhones.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="thePhones.Designer.cs">
-      <DependentUpon>thePhones.cs</DependentUpon>
-    </Compile>
+    <Compile Include="SQlException.cs" />
     <Compile Include="v.cs" />
     <EmbeddedResource Include="aaa.resx">
       <DependentUpon>aaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompany.resx">
+      <DependentUpon>frmCompany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEmployees.resx">
       <DependentUpon>frmEmployees.cs</DependentUpon>
@@ -146,6 +171,12 @@
     <EmbeddedResource Include="frmChangeBackColor.resx">
       <DependentUpon>frmChangeBackColor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmUnit.resx">
+      <DependentUpon>frmUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_category.resx">
       <DependentUpon>frm_category.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,9 +192,6 @@
     </Compile>
     <EmbeddedResource Include="phones.resx">
       <DependentUpon>phones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="thePhones.resx">
-      <DependentUpon>thePhones.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

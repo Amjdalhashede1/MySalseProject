@@ -20,8 +20,8 @@ C:\Users\Projects\Desktop\MyGitHub\mySalseProject\mySalseProject\obj\Debug\mySal
 C:\Users\Projects\Desktop\GitHub\mySalseProject\bin\Debug\mySalseProject.exe.config
 C:\Users\Projects\Desktop\GitHub\mySalseProject\bin\Debug\mySalseProject.exe
 C:\Users\Projects\Desktop\GitHub\mySalseProject\bin\Debug\mySalseProject.pdb
-C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.csprojAssemblyReference.cache
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.aaa.resources
+C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.employee.resources
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.frmEmployees.resources
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.frmOpenForms.resources
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.frmStart.resources
@@ -31,8 +31,10 @@ C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.frmChan
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.frm_category.resources
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.Properties.Resources.resources
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.phones.resources
-C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.thePhones.resources
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.csproj.GenerateResource.cache
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.csproj.CoreCompileInputs.cache
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.exe
 C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.pdb
+C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.frmUsers.resources
+C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.frmCompany.resources
+C:\Users\Projects\Desktop\GitHub\mySalseProject\obj\Debug\mySalseProject.frmUnit.resources

@@ -22,8 +22,8 @@ namespace mySalseProject
             try
             {
                 this.Icon = Icon.ExtractAssociatedIcon("mySalseProject.exe");
-                //frmlogin frm= new frmlogin();
-                frmMain frm= new frmMain();
+                frmlogin frm= new frmlogin();
+              //  frmMain frm= new frmMain();
                 frm.Icon = this.Icon;
                 DB.setBgAndFont();
                 frm.Show();

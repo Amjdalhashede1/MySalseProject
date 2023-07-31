@@ -32,10 +32,10 @@
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgvPhones = new System.Windows.Forms.DataGridView();
-            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnChange = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
+            this.phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhones)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +48,7 @@
             this.lblPhone.Size = new System.Drawing.Size(118, 29);
             this.lblPhone.TabIndex = 0;
             this.lblPhone.Text = "رقم الهاتف";
+            this.lblPhone.Click += new System.EventHandler(this.LblPhone_Click);
             // 
             // txtPhone
             // 
@@ -56,6 +57,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(301, 36);
             this.txtPhone.TabIndex = 1;
+            this.txtPhone.TextChanged += new System.EventHandler(this.TxtPhone_TextChanged);
             this.txtPhone.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtPhone_KeyDown);
             this.txtPhone.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TxtPhone_MouseDown);
             // 
@@ -88,15 +90,7 @@
             this.dgvPhones.RowTemplate.Height = 29;
             this.dgvPhones.Size = new System.Drawing.Size(441, 233);
             this.dgvPhones.TabIndex = 3;
-            this.dgvPhones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPhones_CellContentClick);
             this.dgvPhones.SelectionChanged += new System.EventHandler(this.DgvPhones_SelectionChanged);
-            // 
-            // phone
-            // 
-            this.phone.HeaderText = "رقم الهاتف";
-            this.phone.Name = "phone";
-            this.phone.ReadOnly = true;
-            this.phone.Width = 154;
             // 
             // btnChange
             // 
@@ -126,7 +120,15 @@
             this.btnNew.TabIndex = 2;
             this.btnNew.Text = "جديد";
             this.btnNew.UseVisualStyleBackColor = true;
-            this.btnNew.Click += new System.EventHandler(this.Button4_Click);
+            this.btnNew.Click += new System.EventHandler(this.BtnNew_Click);
+            // 
+            // phone
+            // 
+            this.phone.DataPropertyName = "phone";
+            this.phone.HeaderText = "رقم الهاتف";
+            this.phone.Name = "phone";
+            this.phone.ReadOnly = true;
+            this.phone.Width = 154;
             // 
             // phones
             // 
@@ -145,6 +147,7 @@
             this.Name = "phones";
             this.Size = new System.Drawing.Size(471, 386);
             this.Load += new System.EventHandler(this.Phones_Load);
+            this.Resize += new System.EventHandler(this.Phones_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

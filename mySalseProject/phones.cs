@@ -11,61 +11,80 @@ namespace mySalseProject
         public phones()
         {
             InitializeComponent();
+            this.Name = "Phones";
+            this.ResumeLayout(false);
         }
-        private void clearData()
+        private DataTable tblPhones = new DataTable();
+
+        public int S { get; private set; }
+        private void Phones_Load(object sender, EventArgs e)
+        {
+            ClearData();
+        }
+
+        private void PhonesToGrid()
+        {
+            tblPhones = tblPhones.DefaultView.ToTable(true, "phone");
+            dgvPhones.DataSource = tblPhones;
+        }
+        private void addPhones(string phone)
+        {
+            if (tblPhones.Columns.Count < 1) tblPhones.Columns.Add("phone");
+            tblPhones.Rows.Add(FilterPhone(phone));
+            PhonesToGrid();
+        }
+
+        private DataRow FindRow(string phone)
+        {
+            if (tblPhones.Constraints.Count < 1)
+            {
+                tblPhones.Constraints.Add("phone_pk", tblPhones.Columns[0], true);
+            }
+            return tblPhones.Rows.Find(phone);
+        }
+        private void ClearData()
         {
             txtPhone.Text = "";
-            changeEnabeld(true, true, true, false, false);
             txtPhone.Select();
+            btnAdd.Enabled = true;
+            btnDelete.Enabled = false;
+            btnChange.Enabled = false;
         }
-        private void Button4_Click(object sender, EventArgs e)
+        private string FilterPhone(string phone)
         {
-            clearData();
+            string phoneAfterFilter = "";
+            foreach (char c in phone)
+            {
+                if (char.IsDigit(c))
+                {
+                    phoneAfterFilter += c;
+                }
+            }
+            return phoneAfterFilter;
         }
-        public void addPhones(string phone)
+
+        public void Clear()
         {
-            phonesToGrid(phone);
+            tblPhones.Rows.Clear();
+           // PhonesToGrid();
         }
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             if (txtPhone.Text.Trim() != "")
             {
-                if (!FilerPhone(txtPhone.Text).Equals(""))
-                {
-                    addPhones(FilerPhone(txtPhone.Text));
-                }
-                else
-                {
-                    MessageBox.Show("لايمكن ادخال قيمة فارغة");
-                }
-                clearData();
+                addPhones(txtPhone.Text);
+                ClearData();
             }
         }
         private void TxtPhone_MouseDown(object sender, MouseEventArgs e)
         {
         }
-        private string FilerPhone(string phone)
-        {
-            string phoneF = "";
-            foreach (char c in phone)
-            {
-                if (char.IsDigit(c))
-                {
-                    phoneF += c;
-                }
-            }
-            return phoneF;
-        }
         private void TxtPhone_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData == Keys.Enter && btnAdd.Enabled == true)
+            if (e.KeyData == Keys.Enter && btnAdd.Enabled)
             {
                 btnAdd.PerformClick();
-            }
-            else if (e.KeyData == Keys.Enter && btnChange.Enabled)
-            {
-                btnChange.PerformClick();
             }
         }
         private void DgvPhones_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -73,173 +92,127 @@ namespace mySalseProject
         }
         private void DgvPhones_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvPhones.Rows.Count > 0)
+            if (dgvPhones.CurrentRow != null)
             {
-                txtPhone.Text = dgvPhones.CurrentRow.Cells["phone"].Value.ToString();
-                changeEnabeld(true, true, false, true, true);
-                txtPhone.Select();
-            }
-        }
-        private void phonesToGrid(string phone)
-        {
-            bool vl = false;
-            foreach (DataGridViewRow r in dgvPhones.Rows)
-            {
-                if (r.Cells["phone"].Value.ToString().Equals(txtPhone.Text))
-                {
-                    vl = true;
-                    break;
-                }
-            }
-            if (!vl)
-            {
-                dgvPhones.Rows.Add(phone);
-            }
-            else
-            {
-                clearData();
+                txtPhone.Text = dgvPhones.CurrentRow.Cells[0].Value.ToString();
+                btnAdd.Enabled = false;
+                btnChange.Enabled = true;
+                btnDelete.Enabled = true;
             }
         }
 
+
         private void BtnChange_Click(object sender, EventArgs e)
         {
-            bool vb = false;
-            string oldText = dgvPhones.Rows[dgvPhones.CurrentCell.RowIndex].Cells[0].Value.ToString();
-            string newText = txtPhone.Text;
-            foreach (DataGridViewRow r in dgvPhones.Rows)
+            if (dgvPhones.CurrentRow != null)
             {
-                if (r.Cells["phone"].Value.ToString().Equals(newText))
+                DataRow rowForEdit = FindRow(dgvPhones.CurrentRow.Cells[0].Value.ToString());
+                if (rowForEdit != null)
                 {
-                    vb = true;
-                    break;
+                    tblPhones.Constraints.Clear();
+                    rowForEdit[0] = FilterPhone(txtPhone.Text);
                 }
+                PhonesToGrid();
+                ClearData();
             }
-            bool a = false;
-            foreach (DataGridViewRow r in dgvPhones.Rows)
-            {
-                if (r.Cells[0].Value.ToString().Equals(oldText) && !vb)
-                {
-                    a = true;
-                    break;
-                }
-            }
-            if (a)
-            {
-                if (!newText.Equals(""))
-                    dgvPhones.CurrentRow.Cells[0].Value = newText;
-                else
-                    MessageBox.Show("لايمكن ادخال قيمة فارغة");
-            }
-            else if (newText.Equals(oldText))
-            {
-                MessageBox.Show("لم تقم بتغيير الرقم");
-                txtPhone.Text = "";
-            }
-            else
-            {
-                MessageBox.Show("هذا الرقم موجود مسبقاً");
-                txtPhone.Select();
-                return;
-            }
-            txtPhone.Text = "";
-            txtPhone.Select();
         }
-        private void DgvPhones_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-        }
+    
 
         private void BtnDelete_Click(object sender, EventArgs e)
         {
 
-            dgvPhones.Rows.Remove(dgvPhones.CurrentRow);
-            MessageBox.Show("تم الحذف بنجاح");
-            txtPhone.Select();
-            txtPhone.Text = "";
-            changeEnabeld(false, true, false, false, false);
-            btnNew.Focus();
-        }
-        private void changeEnabeld(bool txtPhon, bool New, bool add, bool change, bool delete)
-        {
-            txtPhone.Enabled = txtPhon;
-            btnNew.Enabled = New;
-            btnAdd.Enabled = add;
-            btnChange.Enabled = change;
-            btnDelete.Enabled = delete;
-        }
-
-        public DataTable getPhonesAsDataTable()
-        {
-            var dt = new DataTable();
-            foreach (DataGridViewColumn item in dgvPhones.Columns)
+            if (dgvPhones.CurrentRow != null)
             {
-                dt.Columns.Add();
-            }
-            var cell = new Object[dgvPhones.Columns.Count];
-            foreach (DataGridViewRow item in dgvPhones.Rows)
-            {
-                for (int i = 0; i < item.Cells.Count; i++)
+                DataRow rowForDelete = FindRow(dgvPhones.CurrentRow.Cells[0].Value.ToString());
+                if (rowForDelete != null)
                 {
-                    cell[i] = item.Cells[i].Value;
+                    rowForDelete.Delete();
                 }
-                dt.Rows.Add(cell);
+                PhonesToGrid();
+                ClearData();
             }
-            return dt;
         }
-        public DataRow[] getPhonesAsDataRowArray()
-        {
-            var selectRow = new List<DataRow>();
-            foreach (DataGridViewRow item in dgvPhones.Rows)
-            {
-                MessageBox.Show("hekko");
-                // var dataRow = ((DataRowView)item).Row;
-                // selectRow.Add(dataRow);
-            }
 
-            return selectRow.ToArray();
-        }
-        public object[] getPhonesAsObjectArray()
+        private void BtnNew_Click(object sender, EventArgs e)
         {
-            object[] o = new object[dgvPhones.Rows.Count];
-            DataRow[] rows = getPhonesAsDataRowArray();
-            for (int i = 0; i < dgvPhones.Rows.Count; i++)
+            ClearData();
+        }
+        public DataTable GetPhoneAsDataTable()
+        {
+            return tblPhones;
+        }
+        public DataRow[] GetPhoneAsDataRowArray()
+        {
+            return tblPhones.Select();
+        }
+        public object[] GetPhoneAsObjectArray()
+        {
+            object[] o = new object[tblPhones.Rows.Count];
+            DataRow[] rows = GetPhoneAsDataRowArray();
+            for (int i = 0; i < tblPhones.Rows.Count; i += 1)
             {
                 o[i] = rows[i][0];
             }
             return o;
         }
-        public string[] getPhonesAsStringArray()
+        public string[] GetPhoneAsStringArray()
         {
-            string[] o = new string[dgvPhones.Rows.Count];
-            DataRow[] rows = getPhonesAsDataRowArray();
-            for (int i = 0; i < dgvPhones.Rows.Count - 1; i += 1)
+            string[] o = new string[tblPhones.Rows.Count];
+            DataRow[] rows = GetPhoneAsDataRowArray();
+            for (int i = 0; i < tblPhones.Rows.Count; i += 1)
             {
-                o[i] = rows[1][0].ToString();
-                MessageBox.Show(o[i] + "");
+                o[i] = rows[i][0].ToString();
             }
             return o;
         }
-        public string getPhonesAsString()
+        public string GetPhoneAsString()
         {
-            string allPhones = "";
-            string[] str = getPhonesAsStringArray();
-            for (int i = 0; i < str.Count(); i++)
+            string allPhone = "";
+            string[] str = GetPhoneAsStringArray();
+            for (int i = 0; i < str.Count(); i += 1)
             {
-                allPhones += str[i] + ((i < str.Count() - 1) ? "," : "");
+                allPhone += str[i] + ((i < str.Count() - 1) ? " , " : "");
             }
-            return allPhones;
+            return allPhone;
         }
-
-        private void Phones_Load(object sender, EventArgs e)
+        public int Count()
         {
-
+            return tblPhones.Rows.Count;
         }
 
         private void Phones_Resize(object sender, EventArgs e)
         {
 
+            if (this.Width < 345) this.Width = 345;
             txtPhone.Left = 10;
             txtPhone.Width = this.Width - lblPhone.Width - 20;
             lblPhone.Left = txtPhone.Width + 10;
+
+
+            int SpaceButtons = 10;
+            int btnWidth = (this.Width / 4) - (SpaceButtons * 2);
+            btnNew.Width = btnWidth;
+            btnAdd.Width = btnWidth;
+            btnChange.Width = btnWidth;
+            btnDelete.Width = btnWidth;
+            btnDelete.Left = SpaceButtons;
+            btnChange.Left = btnDelete.Left + btnDelete.Width + SpaceButtons;
+            btnAdd.Left = btnChange.Left + btnChange.Width + SpaceButtons;
+            btnNew.Left = btnAdd.Left + btnAdd.Width + SpaceButtons;
+            dgvPhones.Left = 10;
+            dgvPhones.Width = this.Width;
+            dgvPhones.Height = (this.Height)-(btnAdd.Top+btnAdd.Height+150);
+
+        }
+
+        private void TxtPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblPhone_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -14,5 +14,7 @@ namespace mySalseProject
         public static int B = 56;
 
         public static FormWindowState formCurrentState = FormWindowState.Maximized;
+        public static string username = "...";
+     
     }
 }

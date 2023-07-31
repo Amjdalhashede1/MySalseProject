@@ -55,6 +55,8 @@
             this.lblEmpNo = new System.Windows.Forms.Label();
             this.txtEmpNo = new System.Windows.Forms.TextBox();
             this.lblEmpHidr = new System.Windows.Forms.Label();
+            this.empPhones = new mySalseProject.phones();
+            this.employee1 = new mySalseProject.employee();
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb)).BeginInit();
             this.SuspendLayout();
@@ -126,7 +128,7 @@
             "بكالوريوس",
             "دبلوم",
             "شهادة متوسطة"});
-            this.cbEmpQualific.Location = new System.Drawing.Point(171, 219);
+            this.cbEmpQualific.Location = new System.Drawing.Point(166, 219);
             this.cbEmpQualific.Name = "cbEmpQualific";
             this.cbEmpQualific.Size = new System.Drawing.Size(279, 37);
             this.cbEmpQualific.TabIndex = 68;
@@ -191,7 +193,7 @@
             this.txtEmpIdNum.Name = "txtEmpIdNum";
             this.txtEmpIdNum.Size = new System.Drawing.Size(278, 36);
             this.txtEmpIdNum.TabIndex = 61;
-            //this.txtEmpIdNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEmpIdNum_KeyPress);
+            this.txtEmpIdNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtEmpIdNum_KeyPress);
             // 
             // rdbEmpFamal
             // 
@@ -311,11 +313,32 @@
             this.lblEmpHidr.TabIndex = 48;
             this.lblEmpHidr.Text = "شاشة تعريف الموظف";
             // 
+            // empPhones
+            // 
+            this.empPhones.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.empPhones.Location = new System.Drawing.Point(491, 281);
+            this.empPhones.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.empPhones.Name = "empPhones";
+            this.empPhones.Size = new System.Drawing.Size(416, 262);
+            this.empPhones.TabIndex = 75;
+            // 
+            // employee1
+            // 
+            this.employee1.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.employee1.Location = new System.Drawing.Point(56, 492);
+            this.employee1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.employee1.Name = "employee1";
+            this.employee1.Size = new System.Drawing.Size(225, 84);
+            this.employee1.TabIndex = 76;
+            this.employee1.Load += new System.EventHandler(this.Employee1_Load);
+            // 
             // frmEmployees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 598);
+            this.ClientSize = new System.Drawing.Size(970, 566);
+            this.Controls.Add(this.employee1);
+            this.Controls.Add(this.empPhones);
             this.Controls.Add(this.btnNewEmp);
             this.Controls.Add(this.btnAddEmp);
             this.Controls.Add(this.txtpathImage);
@@ -349,6 +372,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.Text = "شاشة تعريف الموظف";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmEmployees_FormClosed);
             this.Load += new System.EventHandler(this.FrmEmployees_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbEmpImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcb)).EndInit();
@@ -386,5 +410,7 @@
         private System.Windows.Forms.Label lblEmpNo;
         private System.Windows.Forms.TextBox txtEmpNo;
         private System.Windows.Forms.Label lblEmpHidr;
+        private phones empPhones;
+        private employee employee1;
     }
 }

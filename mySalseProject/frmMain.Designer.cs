@@ -187,7 +187,7 @@
             this.toolStripSeparator60 = new System.Windows.Forms.ToolStripSeparator();
             this.tsBtnRemovSalse = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator61 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsBtnRemovUnit = new System.Windows.Forms.ToolStripButton();
+            this.tsBtnRemovCompany = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator62 = new System.Windows.Forms.ToolStripSeparator();
             this.tsBtnRemovCnste = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator63 = new System.Windows.Forms.ToolStripSeparator();
@@ -210,7 +210,7 @@
             this.toolStripSeparator70 = new System.Windows.Forms.ToolStripSeparator();
             this.tsBtnSerchSalse = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator71 = new System.Windows.Forms.ToolStripSeparator();
-            this.tsBtnSerchUnit = new System.Windows.Forms.ToolStripButton();
+            this.tsBtnSerchCompany = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator72 = new System.Windows.Forms.ToolStripSeparator();
             this.tsBtnSerchCon = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator73 = new System.Windows.Forms.ToolStripSeparator();
@@ -263,6 +263,17 @@
             this.tsMIMax = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMINormal = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMIMin = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip14 = new System.Windows.Forms.ToolStrip();
+            this.tslbl = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator94 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsbTextUserName = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator95 = new System.Windows.Forms.ToolStripSeparator();
+            this.tslblUser = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator96 = new System.Windows.Forms.ToolStripSeparator();
+            this.txtOpenForms = new System.Windows.Forms.ToolStripLabel();
+            this.tsbOpenForms = new System.Windows.Forms.ToolStripLabel();
+            this.toolStrip15 = new System.Windows.Forms.ToolStrip();
+            this.button1 = new System.Windows.Forms.Button();
             tsBtnDataBackupReturn = new System.Windows.Forms.ToolStripButton();
             tsBtnReportPulbch = new System.Windows.Forms.ToolStripButton();
             tsBtnReportProfitAndLost = new System.Windows.Forms.ToolStripButton();
@@ -299,11 +310,12 @@
             this.tsBtnReportMain.SuspendLayout();
             this.tabPage14.SuspendLayout();
             this.toolStrip13.SuspendLayout();
+            this.toolStrip14.SuspendLayout();
             this.SuspendLayout();
             // 
             // tsBtnDataBackupReturn
             // 
-            tsBtnDataBackupReturn.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tsBtnDataBackupReturn.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             tsBtnDataBackupReturn.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnDataBackupReturn.Image")));
             tsBtnDataBackupReturn.ImageTransparentColor = System.Drawing.Color.Magenta;
             tsBtnDataBackupReturn.Name = "tsBtnDataBackupReturn";
@@ -313,7 +325,7 @@
             // 
             // tsBtnReportPulbch
             // 
-            tsBtnReportPulbch.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tsBtnReportPulbch.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             tsBtnReportPulbch.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReportPulbch.Image")));
             tsBtnReportPulbch.ImageTransparentColor = System.Drawing.Color.Magenta;
             tsBtnReportPulbch.Name = "tsBtnReportPulbch";
@@ -323,7 +335,7 @@
             // 
             // tsBtnReportProfitAndLost
             // 
-            tsBtnReportProfitAndLost.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tsBtnReportProfitAndLost.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             tsBtnReportProfitAndLost.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReportProfitAndLost.Image")));
             tsBtnReportProfitAndLost.ImageTransparentColor = System.Drawing.Color.Magenta;
             tsBtnReportProfitAndLost.Name = "tsBtnReportProfitAndLost";
@@ -334,7 +346,7 @@
             // 
             // tsBtnReportAccont
             // 
-            tsBtnReportAccont.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tsBtnReportAccont.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             tsBtnReportAccont.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReportAccont.Image")));
             tsBtnReportAccont.ImageTransparentColor = System.Drawing.Color.Magenta;
             tsBtnReportAccont.Name = "tsBtnReportAccont";
@@ -345,7 +357,7 @@
             // 
             // tsBtnReportUsing
             // 
-            tsBtnReportUsing.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tsBtnReportUsing.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             tsBtnReportUsing.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReportUsing.Image")));
             tsBtnReportUsing.ImageTransparentColor = System.Drawing.Color.Magenta;
             tsBtnReportUsing.Name = "tsBtnReportUsing";
@@ -461,7 +473,7 @@
             // 
             // tsBtnSuply
             // 
-            this.tsBtnSuply.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSuply.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSuply.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSuply.Image")));
             this.tsBtnSuply.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSuply.Name = "tsBtnSuply";
@@ -476,7 +488,7 @@
             // 
             // tsBtnCustum
             // 
-            this.tsBtnCustum.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnCustum.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnCustum.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnCustum.Image")));
             this.tsBtnCustum.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnCustum.Name = "tsBtnCustum";
@@ -491,13 +503,14 @@
             // 
             // tsBtnStore
             // 
-            this.tsBtnStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnStore.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnStore.Image")));
             this.tsBtnStore.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnStore.Name = "tsBtnStore";
             this.tsBtnStore.Size = new System.Drawing.Size(119, 119);
             this.tsBtnStore.Text = " تعريف المخزن";
             this.tsBtnStore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsBtnStore.Click += new System.EventHandler(this.TsBtnStore_Click);
             // 
             // toolStripSeparator18
             // 
@@ -506,7 +519,7 @@
             // 
             // tsBtnCatg
             // 
-            this.tsBtnCatg.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnCatg.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnCatg.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnCatg.Image")));
             this.tsBtnCatg.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnCatg.Name = "tsBtnCatg";
@@ -522,7 +535,7 @@
             // 
             // tsBtnUnet
             // 
-            this.tsBtnUnet.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnUnet.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnUnet.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnUnet.Image")));
             this.tsBtnUnet.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnUnet.Name = "tsBtnUnet";
@@ -538,13 +551,14 @@
             // 
             // tsBtnCompny
             // 
-            this.tsBtnCompny.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnCompny.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnCompny.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnCompny.Image")));
             this.tsBtnCompny.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnCompny.Name = "tsBtnCompny";
             this.tsBtnCompny.Size = new System.Drawing.Size(183, 119);
             this.tsBtnCompny.Text = " تعريف شركات المنشاء";
             this.tsBtnCompny.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsBtnCompny.Click += new System.EventHandler(this.TsBtnCompny_Click);
             // 
             // toolStripSeparator15
             // 
@@ -553,7 +567,7 @@
             // 
             // tsBtnPersian
             // 
-            this.tsBtnPersian.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnPersian.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnPersian.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnPersian.Image")));
             this.tsBtnPersian.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnPersian.Name = "tsBtnPersian";
@@ -568,7 +582,7 @@
             // 
             // tsBtnExpen
             // 
-            this.tsBtnExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnExpen.Image")));
             this.tsBtnExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnExpen.Name = "tsBtnExpen";
@@ -583,7 +597,7 @@
             // 
             // tsBtnRev
             // 
-            this.tsBtnRev.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRev.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRev.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRev.Image")));
             this.tsBtnRev.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRev.Name = "tsBtnRev";
@@ -598,7 +612,7 @@
             // 
             // tsBtnEmpoliess
             // 
-            this.tsBtnEmpoliess.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnEmpoliess.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnEmpoliess.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnEmpoliess.Image")));
             this.tsBtnEmpoliess.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnEmpoliess.Name = "tsBtnEmpoliess";
@@ -662,7 +676,7 @@
             // 
             // tsBtnInvent
             // 
-            this.tsBtnInvent.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnInvent.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnInvent.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnInvent.Image")));
             this.tsBtnInvent.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnInvent.Name = "tsBtnInvent";
@@ -677,7 +691,7 @@
             // 
             // tsBtnMiss
             // 
-            this.tsBtnMiss.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnMiss.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnMiss.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnMiss.Image")));
             this.tsBtnMiss.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnMiss.Name = "tsBtnMiss";
@@ -692,7 +706,7 @@
             // 
             // tsBtnEXPirDate
             // 
-            this.tsBtnEXPirDate.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnEXPirDate.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnEXPirDate.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnEXPirDate.Image")));
             this.tsBtnEXPirDate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnEXPirDate.Name = "tsBtnEXPirDate";
@@ -707,7 +721,7 @@
             // 
             // tsBtnAvailab_qte
             // 
-            this.tsBtnAvailab_qte.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnAvailab_qte.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnAvailab_qte.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnAvailab_qte.Image")));
             this.tsBtnAvailab_qte.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnAvailab_qte.Name = "tsBtnAvailab_qte";
@@ -722,7 +736,7 @@
             // 
             // tsBtnModify_qte
             // 
-            this.tsBtnModify_qte.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModify_qte.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModify_qte.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModify_qte.Image")));
             this.tsBtnModify_qte.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModify_qte.Name = "tsBtnModify_qte";
@@ -737,7 +751,7 @@
             // 
             // tsBtnMoveCatg
             // 
-            this.tsBtnMoveCatg.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnMoveCatg.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnMoveCatg.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnMoveCatg.Image")));
             this.tsBtnMoveCatg.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnMoveCatg.Name = "tsBtnMoveCatg";
@@ -752,7 +766,7 @@
             // 
             // tsBtnPrintBarcod
             // 
-            this.tsBtnPrintBarcod.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnPrintBarcod.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnPrintBarcod.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnPrintBarcod.Image")));
             this.tsBtnPrintBarcod.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnPrintBarcod.Name = "tsBtnPrintBarcod";
@@ -812,7 +826,7 @@
             // 
             // tsBtnReturns
             // 
-            this.tsBtnReturns.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnReturns.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnReturns.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReturns.Image")));
             this.tsBtnReturns.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnReturns.Name = "tsBtnReturns";
@@ -827,7 +841,7 @@
             // 
             // tsBtnTotalPurch
             // 
-            this.tsBtnTotalPurch.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnTotalPurch.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnTotalPurch.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnTotalPurch.Image")));
             this.tsBtnTotalPurch.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnTotalPurch.Name = "tsBtnTotalPurch";
@@ -842,7 +856,7 @@
             // 
             // tsBtnTotalPurch_Details
             // 
-            this.tsBtnTotalPurch_Details.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnTotalPurch_Details.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnTotalPurch_Details.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnTotalPurch_Details.Image")));
             this.tsBtnTotalPurch_Details.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnTotalPurch_Details.Name = "tsBtnTotalPurch_Details";
@@ -857,7 +871,7 @@
             // 
             // tsBtnPurch_Rotion
             // 
-            this.tsBtnPurch_Rotion.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnPurch_Rotion.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnPurch_Rotion.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnPurch_Rotion.Image")));
             this.tsBtnPurch_Rotion.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnPurch_Rotion.Name = "tsBtnPurch_Rotion";
@@ -912,7 +926,7 @@
             // 
             // tsBtnSalseReturn
             // 
-            this.tsBtnSalseReturn.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSalseReturn.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSalseReturn.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSalseReturn.Image")));
             this.tsBtnSalseReturn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSalseReturn.Name = "tsBtnSalseReturn";
@@ -929,7 +943,7 @@
             // 
             // tsBtnTotalSalse
             // 
-            this.tsBtnTotalSalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnTotalSalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnTotalSalse.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnTotalSalse.Image")));
             this.tsBtnTotalSalse.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnTotalSalse.Name = "tsBtnTotalSalse";
@@ -944,7 +958,7 @@
             // 
             // tsBtnTotalSalseDetail
             // 
-            this.tsBtnTotalSalseDetail.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnTotalSalseDetail.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnTotalSalseDetail.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnTotalSalseDetail.Image")));
             this.tsBtnTotalSalseDetail.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnTotalSalseDetail.Name = "tsBtnTotalSalseDetail";
@@ -959,7 +973,7 @@
             // 
             // tsBtnSalseRotion
             // 
-            this.tsBtnSalseRotion.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSalseRotion.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSalseRotion.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSalseRotion.Image")));
             this.tsBtnSalseRotion.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSalseRotion.Name = "tsBtnSalseRotion";
@@ -1016,7 +1030,7 @@
             // 
             // tsBtnReturnCash
             // 
-            this.tsBtnReturnCash.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnReturnCash.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnReturnCash.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReturnCash.Image")));
             this.tsBtnReturnCash.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnReturnCash.Name = "tsBtnReturnCash";
@@ -1031,7 +1045,7 @@
             // 
             // tsBtnMoveExpen
             // 
-            this.tsBtnMoveExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnMoveExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnMoveExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnMoveExpen.Image")));
             this.tsBtnMoveExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnMoveExpen.Name = "tsBtnMoveExpen";
@@ -1046,7 +1060,7 @@
             // 
             // tsBtnMoveExpenByEmp
             // 
-            this.tsBtnMoveExpenByEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnMoveExpenByEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnMoveExpenByEmp.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnMoveExpenByEmp.Image")));
             this.tsBtnMoveExpenByEmp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnMoveExpenByEmp.Name = "tsBtnMoveExpenByEmp";
@@ -1061,7 +1075,7 @@
             // 
             // tsBtnTotalExpen
             // 
-            this.tsBtnTotalExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnTotalExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnTotalExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnTotalExpen.Image")));
             this.tsBtnTotalExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnTotalExpen.Name = "tsBtnTotalExpen";
@@ -1076,7 +1090,7 @@
             // 
             // tsBtnTotalExpenDetil
             // 
-            this.tsBtnTotalExpenDetil.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnTotalExpenDetil.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnTotalExpenDetil.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnTotalExpenDetil.Image")));
             this.tsBtnTotalExpenDetil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnTotalExpenDetil.Name = "tsBtnTotalExpenDetil";
@@ -1133,7 +1147,7 @@
             // 
             // tsBtnReturnRevenu
             // 
-            this.tsBtnReturnRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnReturnRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnReturnRevenu.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReturnRevenu.Image")));
             this.tsBtnReturnRevenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnReturnRevenu.Name = "tsBtnReturnRevenu";
@@ -1148,7 +1162,7 @@
             // 
             // tsBtnRevenuRate
             // 
-            this.tsBtnRevenuRate.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRevenuRate.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRevenuRate.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRevenuRate.Image")));
             this.tsBtnRevenuRate.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRevenuRate.Name = "tsBtnRevenuRate";
@@ -1163,7 +1177,7 @@
             // 
             // tsBtnRevenuReteByEmp
             // 
-            this.tsBtnRevenuReteByEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRevenuReteByEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRevenuReteByEmp.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRevenuReteByEmp.Image")));
             this.tsBtnRevenuReteByEmp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRevenuReteByEmp.Name = "tsBtnRevenuReteByEmp";
@@ -1178,7 +1192,7 @@
             // 
             // tsBtnTotalRevenu
             // 
-            this.tsBtnTotalRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnTotalRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnTotalRevenu.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnTotalRevenu.Image")));
             this.tsBtnTotalRevenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnTotalRevenu.Name = "tsBtnTotalRevenu";
@@ -1193,7 +1207,7 @@
             // 
             // tsBtnTotalRevenuDetil
             // 
-            this.tsBtnTotalRevenuDetil.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnTotalRevenuDetil.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnTotalRevenuDetil.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnTotalRevenuDetil.Image")));
             this.tsBtnTotalRevenuDetil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnTotalRevenuDetil.Name = "tsBtnTotalRevenuDetil";
@@ -1252,7 +1266,7 @@
             // 
             // tsBtnNetPrifetDetil
             // 
-            this.tsBtnNetPrifetDetil.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnNetPrifetDetil.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnNetPrifetDetil.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnNetPrifetDetil.Image")));
             this.tsBtnNetPrifetDetil.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnNetPrifetDetil.Name = "tsBtnNetPrifetDetil";
@@ -1267,7 +1281,7 @@
             // 
             // tsBtnProfitWithoutRevenu
             // 
-            this.tsBtnProfitWithoutRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnProfitWithoutRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnProfitWithoutRevenu.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnProfitWithoutRevenu.Image")));
             this.tsBtnProfitWithoutRevenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnProfitWithoutRevenu.Name = "tsBtnProfitWithoutRevenu";
@@ -1282,7 +1296,7 @@
             // 
             // tsBtnProfitBeforExpen
             // 
-            this.tsBtnProfitBeforExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnProfitBeforExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnProfitBeforExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnProfitBeforExpen.Image")));
             this.tsBtnProfitBeforExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnProfitBeforExpen.Name = "tsBtnProfitBeforExpen";
@@ -1297,7 +1311,7 @@
             // 
             // tsBtnProfitWithoutExpen
             // 
-            this.tsBtnProfitWithoutExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnProfitWithoutExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnProfitWithoutExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnProfitWithoutExpen.Image")));
             this.tsBtnProfitWithoutExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnProfitWithoutExpen.Name = "tsBtnProfitWithoutExpen";
@@ -1312,7 +1326,7 @@
             // 
             // tsBtnProfitWithoutRevenuSpec
             // 
-            this.tsBtnProfitWithoutRevenuSpec.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnProfitWithoutRevenuSpec.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnProfitWithoutRevenuSpec.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnProfitWithoutRevenuSpec.Image")));
             this.tsBtnProfitWithoutRevenuSpec.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnProfitWithoutRevenuSpec.Name = "tsBtnProfitWithoutRevenuSpec";
@@ -1327,7 +1341,7 @@
             // 
             // tsBtnProfiPlace
             // 
-            this.tsBtnProfiPlace.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnProfiPlace.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnProfiPlace.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnProfiPlace.Image")));
             this.tsBtnProfiPlace.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnProfiPlace.Name = "tsBtnProfiPlace";
@@ -1382,7 +1396,7 @@
             // 
             // tsBtnConfigBranchAccont
             // 
-            this.tsBtnConfigBranchAccont.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnConfigBranchAccont.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnConfigBranchAccont.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnConfigBranchAccont.Image")));
             this.tsBtnConfigBranchAccont.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnConfigBranchAccont.Name = "tsBtnConfigBranchAccont";
@@ -1397,7 +1411,7 @@
             // 
             // tsBtnJournal
             // 
-            this.tsBtnJournal.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnJournal.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnJournal.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnJournal.Image")));
             this.tsBtnJournal.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnJournal.Name = "tsBtnJournal";
@@ -1412,7 +1426,7 @@
             // 
             // tsBtnProfessor
             // 
-            this.tsBtnProfessor.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnProfessor.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnProfessor.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnProfessor.Image")));
             this.tsBtnProfessor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnProfessor.Name = "tsBtnProfessor";
@@ -1427,7 +1441,7 @@
             // 
             // tsBtnBalanceShet
             // 
-            this.tsBtnBalanceShet.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnBalanceShet.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnBalanceShet.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnBalanceShet.Image")));
             this.tsBtnBalanceShet.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBalanceShet.Name = "tsBtnBalanceShet";
@@ -1494,7 +1508,7 @@
             // 
             // tsBtnModifySupply
             // 
-            this.tsBtnModifySupply.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifySupply.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifySupply.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifySupply.Image")));
             this.tsBtnModifySupply.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifySupply.Name = "tsBtnModifySupply";
@@ -1509,7 +1523,7 @@
             // 
             // tsBtnModifyCustum
             // 
-            this.tsBtnModifyCustum.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifyCustum.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifyCustum.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifyCustum.Image")));
             this.tsBtnModifyCustum.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifyCustum.Name = "tsBtnModifyCustum";
@@ -1524,7 +1538,7 @@
             // 
             // tsBtnModifyStore
             // 
-            this.tsBtnModifyStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifyStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifyStore.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifyStore.Image")));
             this.tsBtnModifyStore.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifyStore.Name = "tsBtnModifyStore";
@@ -1539,7 +1553,7 @@
             // 
             // tsBtnModifySalse
             // 
-            this.tsBtnModifySalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifySalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifySalse.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifySalse.Image")));
             this.tsBtnModifySalse.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifySalse.Name = "tsBtnModifySalse";
@@ -1554,7 +1568,7 @@
             // 
             // tsBtnModifyUnut
             // 
-            this.tsBtnModifyUnut.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifyUnut.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifyUnut.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifyUnut.Image")));
             this.tsBtnModifyUnut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifyUnut.Name = "tsBtnModifyUnut";
@@ -1569,7 +1583,7 @@
             // 
             // tsBtnModifyConsst
             // 
-            this.tsBtnModifyConsst.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifyConsst.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifyConsst.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifyConsst.Image")));
             this.tsBtnModifyConsst.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifyConsst.Name = "tsBtnModifyConsst";
@@ -1584,7 +1598,7 @@
             // 
             // tsBtnModifyRepress
             // 
-            this.tsBtnModifyRepress.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifyRepress.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifyRepress.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifyRepress.Image")));
             this.tsBtnModifyRepress.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifyRepress.Name = "tsBtnModifyRepress";
@@ -1599,7 +1613,7 @@
             // 
             // tsBtnModifyExpen
             // 
-            this.tsBtnModifyExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifyExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifyExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifyExpen.Image")));
             this.tsBtnModifyExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifyExpen.Name = "tsBtnModifyExpen";
@@ -1614,7 +1628,7 @@
             // 
             // tsBtnModifyRevenu
             // 
-            this.tsBtnModifyRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifyRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifyRevenu.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifyRevenu.Image")));
             this.tsBtnModifyRevenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifyRevenu.Name = "tsBtnModifyRevenu";
@@ -1629,7 +1643,7 @@
             // 
             // tsBtnModifyEmp
             // 
-            this.tsBtnModifyEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnModifyEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnModifyEmp.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnModifyEmp.Image")));
             this.tsBtnModifyEmp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnModifyEmp.Name = "tsBtnModifyEmp";
@@ -1663,7 +1677,7 @@
             this.toolStripSeparator60,
             this.tsBtnRemovSalse,
             this.toolStripSeparator61,
-            this.tsBtnRemovUnit,
+            this.tsBtnRemovCompany,
             this.toolStripSeparator62,
             this.tsBtnRemovCnste,
             this.toolStripSeparator63,
@@ -1697,7 +1711,7 @@
             // 
             // tsBtnRemovSupply
             // 
-            this.tsBtnRemovSupply.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovSupply.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovSupply.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovSupply.Image")));
             this.tsBtnRemovSupply.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovSupply.Name = "tsBtnRemovSupply";
@@ -1712,7 +1726,7 @@
             // 
             // tsBtnRemovCustom
             // 
-            this.tsBtnRemovCustom.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovCustom.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovCustom.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovCustom.Image")));
             this.tsBtnRemovCustom.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovCustom.Name = "tsBtnRemovCustom";
@@ -1727,7 +1741,7 @@
             // 
             // tsBtnRemovStore
             // 
-            this.tsBtnRemovStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovStore.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovStore.Image")));
             this.tsBtnRemovStore.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovStore.Name = "tsBtnRemovStore";
@@ -1743,7 +1757,7 @@
             // 
             // tsBtnRemovSalse
             // 
-            this.tsBtnRemovSalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovSalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovSalse.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovSalse.Image")));
             this.tsBtnRemovSalse.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovSalse.Name = "tsBtnRemovSalse";
@@ -1756,15 +1770,15 @@
             this.toolStripSeparator61.Name = "toolStripSeparator61";
             this.toolStripSeparator61.Size = new System.Drawing.Size(6, 128);
             // 
-            // tsBtnRemovUnit
+            // tsBtnRemovCompany
             // 
-            this.tsBtnRemovUnit.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsBtnRemovUnit.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovUnit.Image")));
-            this.tsBtnRemovUnit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsBtnRemovUnit.Name = "tsBtnRemovUnit";
-            this.tsBtnRemovUnit.Size = new System.Drawing.Size(118, 125);
-            this.tsBtnRemovUnit.Text = "حذف  الوحدات";
-            this.tsBtnRemovUnit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsBtnRemovCompany.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
+            this.tsBtnRemovCompany.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovCompany.Image")));
+            this.tsBtnRemovCompany.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBtnRemovCompany.Name = "tsBtnRemovCompany";
+            this.tsBtnRemovCompany.Size = new System.Drawing.Size(118, 125);
+            this.tsBtnRemovCompany.Text = "حذف  الوحدات";
+            this.tsBtnRemovCompany.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator62
             // 
@@ -1773,7 +1787,7 @@
             // 
             // tsBtnRemovCnste
             // 
-            this.tsBtnRemovCnste.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovCnste.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovCnste.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovCnste.Image")));
             this.tsBtnRemovCnste.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovCnste.Name = "tsBtnRemovCnste";
@@ -1788,7 +1802,7 @@
             // 
             // tsBtnRemovReprec
             // 
-            this.tsBtnRemovReprec.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovReprec.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovReprec.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovReprec.Image")));
             this.tsBtnRemovReprec.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovReprec.Name = "tsBtnRemovReprec";
@@ -1803,7 +1817,7 @@
             // 
             // tsBtnRemovExpen
             // 
-            this.tsBtnRemovExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovExpen.Image")));
             this.tsBtnRemovExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovExpen.Name = "tsBtnRemovExpen";
@@ -1818,7 +1832,7 @@
             // 
             // tsBtnRemovRevenu
             // 
-            this.tsBtnRemovRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovRevenu.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovRevenu.Image")));
             this.tsBtnRemovRevenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovRevenu.Name = "tsBtnRemovRevenu";
@@ -1834,7 +1848,7 @@
             // 
             // tsBtnRemovEmp
             // 
-            this.tsBtnRemovEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnRemovEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnRemovEmp.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnRemovEmp.Image")));
             this.tsBtnRemovEmp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnRemovEmp.Name = "tsBtnRemovEmp";
@@ -1867,7 +1881,7 @@
             this.toolStripSeparator70,
             this.tsBtnSerchSalse,
             this.toolStripSeparator71,
-            this.tsBtnSerchUnit,
+            this.tsBtnSerchCompany,
             this.toolStripSeparator72,
             this.tsBtnSerchCon,
             this.toolStripSeparator73,
@@ -1901,7 +1915,7 @@
             // 
             // tsBtnSerchSupply
             // 
-            this.tsBtnSerchSupply.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchSupply.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchSupply.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchSupply.Image")));
             this.tsBtnSerchSupply.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchSupply.Name = "tsBtnSerchSupply";
@@ -1916,7 +1930,7 @@
             // 
             // tsBtnSerchCustom
             // 
-            this.tsBtnSerchCustom.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchCustom.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchCustom.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchCustom.Image")));
             this.tsBtnSerchCustom.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchCustom.Name = "tsBtnSerchCustom";
@@ -1932,7 +1946,7 @@
             // 
             // tsBtnSerchStore
             // 
-            this.tsBtnSerchStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchStore.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchStore.Image")));
             this.tsBtnSerchStore.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchStore.Name = "tsBtnSerchStore";
@@ -1947,7 +1961,7 @@
             // 
             // tsBtnSerchSalse
             // 
-            this.tsBtnSerchSalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchSalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchSalse.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchSalse.Image")));
             this.tsBtnSerchSalse.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchSalse.Name = "tsBtnSerchSalse";
@@ -1960,15 +1974,15 @@
             this.toolStripSeparator71.Name = "toolStripSeparator71";
             this.toolStripSeparator71.Size = new System.Drawing.Size(6, 128);
             // 
-            // tsBtnSerchUnit
+            // tsBtnSerchCompany
             // 
-            this.tsBtnSerchUnit.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsBtnSerchUnit.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchUnit.Image")));
-            this.tsBtnSerchUnit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsBtnSerchUnit.Name = "tsBtnSerchUnit";
-            this.tsBtnSerchUnit.Size = new System.Drawing.Size(109, 125);
-            this.tsBtnSerchUnit.Text = "بحث الوحدات";
-            this.tsBtnSerchUnit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsBtnSerchCompany.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
+            this.tsBtnSerchCompany.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchCompany.Image")));
+            this.tsBtnSerchCompany.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBtnSerchCompany.Name = "tsBtnSerchCompany";
+            this.tsBtnSerchCompany.Size = new System.Drawing.Size(109, 125);
+            this.tsBtnSerchCompany.Text = "بحث الوحدات";
+            this.tsBtnSerchCompany.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator72
             // 
@@ -1977,7 +1991,7 @@
             // 
             // tsBtnSerchCon
             // 
-            this.tsBtnSerchCon.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchCon.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchCon.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchCon.Image")));
             this.tsBtnSerchCon.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchCon.Name = "tsBtnSerchCon";
@@ -1992,7 +2006,7 @@
             // 
             // tsBtnSerchRepres
             // 
-            this.tsBtnSerchRepres.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchRepres.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchRepres.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchRepres.Image")));
             this.tsBtnSerchRepres.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchRepres.Name = "tsBtnSerchRepres";
@@ -2007,7 +2021,7 @@
             // 
             // tsBtnSerchExpen
             // 
-            this.tsBtnSerchExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchExpen.Image")));
             this.tsBtnSerchExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchExpen.Name = "tsBtnSerchExpen";
@@ -2022,7 +2036,7 @@
             // 
             // tsBtnSerchRevenu
             // 
-            this.tsBtnSerchRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchRevenu.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchRevenu.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchRevenu.Image")));
             this.tsBtnSerchRevenu.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchRevenu.Name = "tsBtnSerchRevenu";
@@ -2037,7 +2051,7 @@
             // 
             // tsBtnSerchEmp
             // 
-            this.tsBtnSerchEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnSerchEmp.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnSerchEmp.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnSerchEmp.Image")));
             this.tsBtnSerchEmp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnSerchEmp.Name = "tsBtnSerchEmp";
@@ -2094,7 +2108,7 @@
             // 
             // tsBtnDataImportFromAccess
             // 
-            this.tsBtnDataImportFromAccess.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnDataImportFromAccess.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnDataImportFromAccess.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnDataImportFromAccess.Image")));
             this.tsBtnDataImportFromAccess.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnDataImportFromAccess.Name = "tsBtnDataImportFromAccess";
@@ -2109,7 +2123,7 @@
             // 
             // tsBtnDataExportIntoExcel
             // 
-            this.tsBtnDataExportIntoExcel.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnDataExportIntoExcel.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnDataExportIntoExcel.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnDataExportIntoExcel.Image")));
             this.tsBtnDataExportIntoExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnDataExportIntoExcel.Name = "tsBtnDataExportIntoExcel";
@@ -2124,7 +2138,7 @@
             // 
             // tsBtnDataExportIntoAccess
             // 
-            this.tsBtnDataExportIntoAccess.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnDataExportIntoAccess.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnDataExportIntoAccess.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnDataExportIntoAccess.Image")));
             this.tsBtnDataExportIntoAccess.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnDataExportIntoAccess.Name = "tsBtnDataExportIntoAccess";
@@ -2139,7 +2153,7 @@
             // 
             // tsBtnDataBackup
             // 
-            this.tsBtnDataBackup.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnDataBackup.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnDataBackup.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnDataBackup.Image")));
             this.tsBtnDataBackup.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnDataBackup.Name = "tsBtnDataBackup";
@@ -2204,7 +2218,7 @@
             // 
             // tsBtnReportStore
             // 
-            this.tsBtnReportStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnReportStore.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnReportStore.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReportStore.Image")));
             this.tsBtnReportStore.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnReportStore.Name = "tsBtnReportStore";
@@ -2224,7 +2238,7 @@
             // 
             // tsBtnReportSalse
             // 
-            this.tsBtnReportSalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnReportSalse.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnReportSalse.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReportSalse.Image")));
             this.tsBtnReportSalse.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnReportSalse.Name = "tsBtnReportSalse";
@@ -2239,7 +2253,7 @@
             // 
             // tsBtnReportRevenuAndExpen
             // 
-            this.tsBtnReportRevenuAndExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnReportRevenuAndExpen.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnReportRevenuAndExpen.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnReportRevenuAndExpen.Image")));
             this.tsBtnReportRevenuAndExpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnReportRevenuAndExpen.Name = "tsBtnReportRevenuAndExpen";
@@ -2298,7 +2312,7 @@
             // 
             // tsBtnBackgroundColor
             // 
-            this.tsBtnBackgroundColor.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnBackgroundColor.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnBackgroundColor.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnBackgroundColor.Image")));
             this.tsBtnBackgroundColor.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnBackgroundColor.Name = "tsBtnBackgroundColor";
@@ -2315,7 +2329,7 @@
             // 
             // tsBtnFontSize
             // 
-            this.tsBtnFontSize.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnFontSize.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnFontSize.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnFontSize.Image")));
             this.tsBtnFontSize.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnFontSize.Name = "tsBtnFontSize";
@@ -2330,13 +2344,14 @@
             // 
             // tsBtnUsers
             // 
-            this.tsBtnUsers.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnUsers.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnUsers.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnUsers.Image")));
             this.tsBtnUsers.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnUsers.Name = "tsBtnUsers";
             this.tsBtnUsers.Size = new System.Drawing.Size(108, 125);
             this.tsBtnUsers.Text = "المستخدمين";
             this.tsBtnUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsBtnUsers.Click += new System.EventHandler(this.TsBtnUsers_Click);
             // 
             // toolStripSeparator91
             // 
@@ -2345,7 +2360,7 @@
             // 
             // tsBtnPermession
             // 
-            this.tsBtnPermession.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnPermession.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnPermession.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnPermession.Image")));
             this.tsBtnPermession.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnPermession.Name = "tsBtnPermession";
@@ -2360,7 +2375,7 @@
             // 
             // tsBtnShowOpeningForm
             // 
-            this.tsBtnShowOpeningForm.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsBtnShowOpeningForm.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.tsBtnShowOpeningForm.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnShowOpeningForm.Image")));
             this.tsBtnShowOpeningForm.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsBtnShowOpeningForm.Name = "tsBtnShowOpeningForm";
@@ -2417,14 +2432,102 @@
             this.tsMIMin.Text = "فتح في وضع التصغير";
             this.tsMIMin.Click += new System.EventHandler(this.TsMIMin_Click);
             // 
+            // toolStrip14
+            // 
+            this.toolStrip14.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.toolStrip14.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStrip14.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tslbl,
+            this.toolStripSeparator94,
+            this.tsbTextUserName,
+            this.toolStripSeparator95,
+            this.tslblUser,
+            this.toolStripSeparator96,
+            this.txtOpenForms,
+            this.tsbOpenForms});
+            this.toolStrip14.Location = new System.Drawing.Point(0, 584);
+            this.toolStrip14.Name = "toolStrip14";
+            this.toolStrip14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStrip14.Size = new System.Drawing.Size(1577, 28);
+            this.toolStrip14.TabIndex = 2;
+            this.toolStrip14.Text = "toolStrip14";
+            // 
+            // tslbl
+            // 
+            this.tslbl.Name = "tslbl";
+            this.tslbl.Size = new System.Drawing.Size(24, 25);
+            this.tslbl.Text = "...";
+            // 
+            // toolStripSeparator94
+            // 
+            this.toolStripSeparator94.Name = "toolStripSeparator94";
+            this.toolStripSeparator94.Size = new System.Drawing.Size(6, 28);
+            // 
+            // tsbTextUserName
+            // 
+            this.tsbTextUserName.Name = "tsbTextUserName";
+            this.tsbTextUserName.Size = new System.Drawing.Size(86, 25);
+            this.tsbTextUserName.Text = "المستخدم";
+            // 
+            // toolStripSeparator95
+            // 
+            this.toolStripSeparator95.Name = "toolStripSeparator95";
+            this.toolStripSeparator95.Size = new System.Drawing.Size(6, 28);
+            // 
+            // tslblUser
+            // 
+            this.tslblUser.ForeColor = System.Drawing.Color.Red;
+            this.tslblUser.Name = "tslblUser";
+            this.tslblUser.Size = new System.Drawing.Size(24, 25);
+            this.tslblUser.Text = "...";
+            // 
+            // toolStripSeparator96
+            // 
+            this.toolStripSeparator96.Name = "toolStripSeparator96";
+            this.toolStripSeparator96.Size = new System.Drawing.Size(6, 28);
+            // 
+            // txtOpenForms
+            // 
+            this.txtOpenForms.Name = "txtOpenForms";
+            this.txtOpenForms.Size = new System.Drawing.Size(151, 25);
+            this.txtOpenForms.Text = "الشاشات المفتوحة";
+            // 
+            // tsbOpenForms
+            // 
+            this.tsbOpenForms.Name = "tsbOpenForms";
+            this.tsbOpenForms.Size = new System.Drawing.Size(131, 25);
+            this.tsbOpenForms.Text = "toolStripLabel1";
+            // 
+            // toolStrip15
+            // 
+            this.toolStrip15.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.toolStrip15.Location = new System.Drawing.Point(0, 162);
+            this.toolStrip15.Name = "toolStrip15";
+            this.toolStrip15.Size = new System.Drawing.Size(1577, 25);
+            this.toolStrip15.TabIndex = 3;
+            this.toolStrip15.Text = "toolStrip15";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(583, 355);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(1577, 612);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.toolStrip15);
+            this.Controls.Add(this.toolStrip14);
             this.Controls.Add(this.pnlSalse);
-            this.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsCompany.Point, ((byte)(0)));
             this.IsMdiContainer = true;
             this.Name = "frmMain";
             this.Text = "برنامج ادارة المبيعات";
@@ -2488,7 +2591,10 @@
             this.tabPage14.PerformLayout();
             this.toolStrip13.ResumeLayout(false);
             this.toolStrip13.PerformLayout();
+            this.toolStrip14.ResumeLayout(false);
+            this.toolStrip14.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2646,7 +2752,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator60;
         private System.Windows.Forms.ToolStripButton tsBtnRemovSalse;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator61;
-        private System.Windows.Forms.ToolStripButton tsBtnRemovUnit;
+        private System.Windows.Forms.ToolStripButton tsBtnRemovCompany;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator62;
         private System.Windows.Forms.ToolStripButton tsBtnRemovCnste;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator63;
@@ -2669,7 +2775,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator70;
         private System.Windows.Forms.ToolStripButton tsBtnSerchSalse;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator71;
-        private System.Windows.Forms.ToolStripButton tsBtnSerchUnit;
+        private System.Windows.Forms.ToolStripButton tsBtnSerchCompany;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator72;
         private System.Windows.Forms.ToolStripButton tsBtnSerchCon;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator73;
@@ -2722,5 +2828,16 @@
         private System.Windows.Forms.ToolStripMenuItem tsMIMax;
         private System.Windows.Forms.ToolStripMenuItem tsMINormal;
         private System.Windows.Forms.ToolStripMenuItem tsMIMin;
+        private System.Windows.Forms.ToolStrip toolStrip14;
+        private System.Windows.Forms.ToolStripLabel tslbl;
+        private System.Windows.Forms.ToolStrip toolStrip15;
+        private System.Windows.Forms.ToolStripLabel tsbTextUserName;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator94;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator95;
+        private System.Windows.Forms.ToolStripLabel tslblUser;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator96;
+        private System.Windows.Forms.ToolStripLabel txtOpenForms;
+        private System.Windows.Forms.ToolStripLabel tsbOpenForms;
+        private System.Windows.Forms.Button button1;
     }
 }
